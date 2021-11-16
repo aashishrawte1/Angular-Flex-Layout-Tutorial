@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { LayoutFullModule } from './layouts/layout-full/layout-full.module';
+import { LayoutSideModule } from './layouts/layout-side/layout-side.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule,
+    LayoutFullModule,
+    LayoutSideModule
   ],
   providers: [],
   bootstrap: [AppComponent]
